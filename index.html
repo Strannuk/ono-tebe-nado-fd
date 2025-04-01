@@ -11,16 +11,16 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__menu">
-        <ul class="header__menu-list">
-          <li class="header__menu-list-item header__menu-list-active">
-            <a class="header__menu-link header__menu-link-active">главная</a>
+      <nav>
+        <ul class="header__links-list">
+          <li class="header__links-list-item header__links-list-item_no-bullit">
+            <a class="header__link header__link-active">главная</a>
           </li>
-          <li class="header__menu-list-item">
-            <a class="header__menu-link">посмотреть лоты</a>
+          <li class="header__links-list-item">
+            <a class="header__link">посмотреть лоты</a>
           </li>
-          <li class="header__menu-list-item">
-            <a class="header__menu-link">об аукционе</a>
+          <li class="header__links-list-item">
+            <a class="header__link">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -31,40 +31,46 @@
           alt="Оно тебе надо"
         />
       </a>
-      <address class="contact">
-        <ul class="contact__list">
-          <li class="contact__item">
-            <a href="tel+:+99995555555">+9 999 555 5555</a>
+      <address class="header__address">
+        <ul>
+          <li>
+            <a class="header__address-links" href="tel+:+99995555555"
+              >+9 999 555 5555</a
+            >
           </li>
-          <li class="contact__item">
-            <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <li>
+            <a class="header__address-links" href="mailto:info@sobaka.ge"
+              >info@sobaka.ge</a
+            >
           </li>
-          <li class="contact__item">
-            наб. Принсенграхт 263-<br />265, Амстердам
-          </li>
+          <li>наб. Принсенграхт 263-<br />265, Амстердам</li>
         </ul>
       </address>
     </header>
     <main>
       <section class="cover">
         <div class="overlay">
-          <h1 class="cover__heading">
-            <span class="cover__heading-text">ОНО</span>
-            <span class="cover__heading-center">ТЕБЕ</span>
-            <span class="cover__heading-bottom">НАДО</span>
+          <h1 class="cover__title">
+            <span class="aligned-text">ОНО</span>
+            <span class="aligned-text aligned-text_center"
+              >ТЕБ<span class="no-letter-spacing">Е</span></span
+            >
+            <span class="aligned-text aligned-text_right"
+              >НАД<span class="no-letter-spacing">О</span></span
+            >
           </h1>
-          <div class="description">
-            <p class="description-text">
-              Аукцион вещей, <span class="no-letter-spacing">в которые</span> никто не верил
+          <div class="cover__description">
+            <p class="cover__description-text">
+              Аукцион вещей, в которые никто не верил
             </p>
-            <button class="description-button button">Сделать ставку</button>
+            <button class="bet-button button">Сделать ставку</button>
           </div>
         </div>
       </section>
       <section class="lots">
         <h2 class="lots__heading">Лоты</h2>
-        <ul class="lots__menu-list">
-          <li class="lots__menu-item lots__menu-item-film">
+        <ul class="lots__card-list">
+          <li class="lots__card-list-item card_type_film">
             <a class="card-link">
               <article class="card overlay">
                 <h3 class="card__title">
@@ -78,7 +84,7 @@
               </article>
             </a>
           </li>
-          <li class="lots__menu-item lots__menu-item-book">
+          <li class="lots__card-list-item card_type_book">
             <a class="card-link">
               <article class="card overlay">
                 <h3 class="card__title">
@@ -95,7 +101,7 @@
               </article>
             </a>
           </li>
-          <li class="lots__menu-item lots__menu-item-picture">
+          <li class="lots__card-list-item card_type_picture">
             <a class="card-link">
               <article class="card overlay">
                 <h3 class="card__title">
@@ -114,58 +120,61 @@
         <a class="lots__look-more-link" href="">посмотреть больше</a>
       </section>
       <section class="about">
-        <div class="about__logo-container">
-          <img
-            class="about-logo"
-            src="/images/logo-white.svg"
-            alt="Оно тебе надо"
-          />
+        <div class="about__column_logo">
+          <div class="about__logo">
+            <img
+              class="about__logo-image"
+              src="/images/logo-white.svg"
+              alt="Оно тебе надо"
+            />
+          </div>
         </div>
-        <div class="about__title_text">
+        <div class="about__column">
           <h2 class="about__title">Об аукционе</h2>
-          <p class="about__text">
+          <p class="about__text about__text_space">
             Здесь вы не встретите очередное пафосное собрание невероятно
-            дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
-            один аукцион. Потому что кому нужен дневник девочки-подростка или
-            картина, которую может нарисовать даже ребёнок? Кому нужны все эти
-            странные вещи, созданные любителями?
+            дорогого антиквариата. Наши лоты вообще не должны были попасть
+            <br />ни на один аукцион. Потому что кому нужен дневник
+            девочки-подростка или картина, которую может нарисовать даже
+            ребёнок? Кому нужны все эти странные вещи, созданные любителями?
           </p>
           <p class="about__text">
             Слишком сложные или, наоборот, слишком простые. Опережающие своё
             время. В пух и прах растерзанные критиками. Непринятые и непонятые.
-            Когда-то они казались просто неудачными. Но, несмотря на критику,
-            кажущуюся простоту или сложность, сейчас без этих лотов невозможно
-            представить современную культуру. Когда в эти вещи не верил никто,
-            продолжали верить их создатели. И сейчас эти лоты стали культовыми.
+            Когда-то они казались просто неудачными. Но, несмотря <br />на
+            критику, кажущуюся простоту или сложность, сейчас без этих лотов
+            невозможно представить современную культуру. Когда в эти вещи не
+            верил никто, продолжали верить их создатели. И сейчас эти лоты стали
+            культовыми.
           </p>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <address class="footer__contact">
-        <ul class="contact__list">
-          <li class="contact__item">
+      <address class="footer__adress">
+        <ul>
+          <li>
             <a href="tel+:99995555555">+9 999 555 5555</a>
           </li>
-          <li class="contact__item">
+          <li>
             <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
           </li>
-          <li class="contact__item">
+          <li>
             наб. Принсенграхт 263-265,<br />
             Амстердам
           </li>
         </ul>
       </address>
       <ul class="footer__menu-list">
-        <li class="footer__menu-list-item">
+        <li>
           <a href="#0" class="footer__menu-link footer__menu-link-active"
             >главная</a
           >
         </li>
-        <li class="footer__menu-list-item">
+        <li>
           <a href="#0" class="footer__menu-link">посмотреть лоты</a>
         </li>
-        <li class="footer__menu-list-item">
+        <li>
           <a href="#0" class="footer__menu-link">об аукционе</a>
         </li>
       </ul>
