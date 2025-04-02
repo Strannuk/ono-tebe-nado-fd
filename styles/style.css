@@ -65,7 +65,7 @@ body {
   line-height: 1.35;
 }
 
-.address-item{
+.address-item {
   margin-left: 186px;
 }
 
@@ -244,7 +244,7 @@ body {
   padding: 135px 0 0 25px;
 }
 
-.about__article{
+.about__article {
   display: flex;
   flex-direction: column;
   gap:24px;
